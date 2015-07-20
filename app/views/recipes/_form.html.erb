@@ -1,16 +1,45 @@
-<%= form_for(@product) do |f| %>
+<%= form_for(@recipe) do |f| %>
+
 
   <div class="field">
-    <%= f.label :name %><br />
-    <%= f.text_field :name %>
+    <%= f.label :nickname %><br />
+    <%= f.text_field :nickname %>
+  </div>
+  <div class="field">
+    <%= f.label :website %><br />
+    <%= f.text_area :website %>
+  </div>
+  <div class="field">
+    <%= f.label :instagram %><br />
+    <%= f.text_area :instagram %>
+  </div>
+  <div class="field">
+    <%= f.label :title %><br />
+    <%= f.text_area :title %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br />
+    <%= f.text_area :description %>
+  </div>
+  <div class="field">
+    <%= f.label :ingredients %><br />
+    <%= f.text_area :ingredients %>
   </div>
   <div class="field">
     <%= f.label :instructions %><br />
     <%= f.text_area :instructions %>
   </div>
   <div class="field">
-    <%= f.label :ingredients %><br />
-    <%= f.text_area :ingredients %>
+    <%= f.label :notes %><br />
+    <%= f.text_area :notes %>
+  </div>
+  <div class="field">
+    <%= f.label :embed %><br />
+    <%= f.text_area :embed %>
+  </div>
+   <div class="field">
+    <%= f.label :photo %><br />
+    <%= f.text_area :photo %>
   </div>
   <div class="actions">
     <%= f.submit %>
