@@ -43,7 +43,7 @@ def update
 
   private
   def recipe_params
-    params.require(:recipe).permit(:nickname, :website:, :instagram, :title, :description:, :instructions, :ingredients, :notes, :embed, :photo)
+    params.require(:recipe).permit(:nickname, :website, :instagram, :title, :description, :instructions, :ingredients, :notes, :embed, :photo)
   end
 
 end
