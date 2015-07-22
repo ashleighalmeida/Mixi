@@ -11,7 +11,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150720161953) do
+ActiveRecord::Schema.define(version: 20150722142355) do
+
+  create_table "categories", force: :cascade do |t|
+    t.string   "vegan"
+    t.string   "paleo"
+    t.string   "ketogenic"
+    t.string   "eggfree"
+    t.string   "sugarfree"
+    t.string   "lowcarb"
+    t.string   "highcarb"
+    t.string   "other"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "recipes", force: :cascade do |t|
     t.string   "nickname"
