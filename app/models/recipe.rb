@@ -1,5 +1,5 @@
 class Recipe < ActiveRecord::Base
-   validates :description, :nickname, :title, :ingredients, :instructions, :categories, presence: true
+   validates :description, :nickname, :title, :ingredients, :instructions, :category_ids, presence: true
 
-   has_and_belongs_to_many :categories
+ has_many :categories
 end

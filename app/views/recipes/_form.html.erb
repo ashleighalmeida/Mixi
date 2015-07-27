@@ -53,8 +53,11 @@
     <%= f.label :photo %><br />
     <%= f.text_area :photo %>
   </div>
+  <div class="field">
 
-<%= select_tag :categories, options_from_collection_for_select(Category.all, "id", "name") %>
+<%= f.collection_select :category_ids, Category.all, :id, :name, :prompt => "Select a category" %>
+
+</div>
 
   <div class="actions">
     <%= f.submit %>

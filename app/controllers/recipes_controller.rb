@@ -9,6 +9,7 @@ class RecipesController < ApplicationController
 
   def new
     @recipe = Recipe.new
+    
   end
 
   def edit
@@ -43,7 +44,7 @@ def update
 
   private
   def recipe_params
-    params.require(:recipe).permit(:nickname, :website, :instagram, :title, :description, :instructions, :ingredients, :notes, :embed, :photo)
+    params.require(:recipe).permit(:nickname, :website, :instagram, :title, :description, :instructions, :ingredients, :notes, :embed, :photo, :category_ids)
   end
 
 end

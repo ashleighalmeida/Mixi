@@ -11,6 +11,7 @@ class CreateRecipes < ActiveRecord::Migration
     t.string   :notes
     t.string   :embed
     t.string   :photo
+    
 
       t.timestamps null: false
     end
