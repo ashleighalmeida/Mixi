@@ -37,6 +37,7 @@ ActiveRecord::Schema.define(version: 20150727181756) do
     t.string   "notes"
     t.string   "embed"
     t.string   "photo"
+     t.string :attachment
     t.datetime "created_at",   null: false
     t.datetime "updated_at",   null: false
   end
